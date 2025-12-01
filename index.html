@@ -35,6 +35,27 @@
      width: 200%;
      height: 400%;
    }
+   /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
   </style>
  </head>
  <body class="min-h-screen bg-gradient-to-br from-white-500 via-black-500 to-black-500 p-4 sm:p-6 md:p-8">
@@ -47,7 +68,8 @@
   <a href="#education">Education</a>
   <a href="#projects">Projects</a>
   <a href="#academics">Academics Performance</a>
-  <a href="#internships">Internships</a>
+  <a href="#skills">Skills</a>
+  <a href="#internship">Internships</a>
 </nav>
 
   <a href="resume.pdf"
@@ -217,11 +239,46 @@
   <p class="text-gray-700 text-base">SGPA : 9+ <br> Semester result : 9.18,9.25,...<br></p>
 </section>
 
-<section id="internships" class="max-w-[1500px] mx-auto mt-14 p-10 bg-gradient-to-r from-yellow-300 to-pink-200 rounded-2xl shadow">
-  <h2 class="text-2xl font-bold mb-4">Internships</h2>
-  <p class="text-gray-700 text-base">Internship experiences : Cloud Computing, Artficial Intellingence<br>Roles : Understanding the processes, Debugging, analysing, Testing, Compablity check<br>Skills: XAMPP, PHP, HTML, CSS, Javascript, C, C++, MySQL, Flask, and still learning... </p>
+<section id="skills" class="max-w-[1500px] mx-auto mt-14 p-10 bg-gradient-to-r from-yellow-300 to-pink-200 rounded-2xl shadow">
+  <h2 class="text-2xl font-bold mb-4">Skills</h2>
+
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">77%</div>
+</div>
+
+  <p>C++</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>Java</p>
+<div class="container">
+  <div class="skills js">5%</div>
+</div>
+
+  <p class="text-gray-700 text-base"></p>
 </section>
 
+<section id="internship" class="max-w-[1500px] mx-auto mt-14 p-10 bg-gradient-to-r from-green-300 to-yellow-300 rounded-2xl shadow">
+  <h2 class="text-2xl font-bold mb-4">Internships</h2>
+  <p class="text-gray-700 text-base">SGPA : 9+ <br> Semester result : 9.18,9.25,...<br></p>
+</section>
 
 <script>
   // Smooth scroll for navbar
